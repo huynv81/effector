@@ -1,1 +1,1 @@
-export {changeSources, selectVersion} from './model'
+export {Location, changeSources, selectVersion, codeSetCursor} from './model'

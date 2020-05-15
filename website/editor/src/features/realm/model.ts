@@ -57,7 +57,7 @@ const component = createEvent<StoreView<any, any>>()
 const $intervals = createStore<NodeJS.Timeout[]>([])
 const $timeouts = createStore<NodeJS.Timeout[]>([])
 const $listeners = createStore<Listener[]>([])
-const $stats = createStore<Stats>({
+export const $stats = createStore<Stats>({
   event: [],
   store: [],
   effect: [],
