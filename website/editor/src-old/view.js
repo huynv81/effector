@@ -16,15 +16,22 @@ import {TypeHintView} from './flow/view'
 import {isDesktopChanges, tab} from './tabs/domain'
 import {DesktopScreens, SmallScreens, TabsView} from './tabs/view'
 import {mode} from './mode/domain'
-import {changeSources, codeCursorActivity, codeMarkLine, codeSetCursor, performLint} from './editor'
+import {
+  changeSources,
+  codeCursorActivity,
+  codeMarkLine,
+  codeSetCursor,
+  performLint,
+} from './editor'
 import {codeError, sourceCode} from './editor/state'
 
 import {stats} from './realm/state'
 import Sizer from './components/Sizer'
 import {GitHubAuth} from './github/GitHubAuthLink'
 
-
-export const OutlineView = createComponent({stats}, ({}, {stats}) => <Outline {...stats} />)
+export const OutlineView = createComponent({stats}, ({}, {stats}) => (
+  <Outline {...stats} />
+))
 
 const ErrorsView = createComponent(
   codeError,
@@ -95,7 +102,11 @@ const CodeView = createComponent(
   },
 )
 
-const $displayOutline = combine(tab, isDesktopChanges, (tab, isDesktop) => isDesktop || tab === 'editor')
+const $displayOutline = combine(
+  tab,
+  isDesktopChanges,
+  (tab, isDesktop) => isDesktop || tab === 'editor',
+)
 
 export default () => {
   const displayOutline = useStore($displayOutline)

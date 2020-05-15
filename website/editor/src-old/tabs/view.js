@@ -65,7 +65,13 @@ export const TabsView = () => {
   const flowToggle = useStore(_flowToggle)
   return (
     <>
-      <TabHeaderList className="header-tabs" style={{borderLeft: '1px solid #ddd', display: 'flex', justifyContent: 'space-between'}}>
+      <TabHeaderList
+        className="header-tabs"
+        style={{
+          borderLeft: '1px solid #ddd',
+          display: 'flex',
+          justifyContent: 'space-between',
+        }}>
         <PrettifyButton />
         <SmallScreens>
           <TabHeaderTemplate name="editor" />
@@ -76,9 +82,7 @@ export const TabsView = () => {
         <TabHeaderTemplate name="settings" />
       </TabHeaderList>
       {tab === 'graphite' && <GraphiteView />}
-      <div
-        style={{display: tab === 'dom' ? 'block' : 'none'}}
-        className="dom">
+      <div style={{display: tab === 'dom' ? 'block' : 'none'}} className="dom">
         <iframe id="dom" />
       </div>
       {tab === 'share' && <Share />}
