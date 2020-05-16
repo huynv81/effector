@@ -1,0 +1,1 @@
+export {setCurrentShareId} from './model'

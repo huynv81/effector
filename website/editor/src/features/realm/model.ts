@@ -10,7 +10,7 @@ import {
   Unit,
 } from 'effector'
 import {StoreView} from 'effector-react'
-import {selectVersion, changeSources} from '../editor'
+import {selectVersion, changeSources} from '~/features/editor'
 
 interface Listener {
   type: string

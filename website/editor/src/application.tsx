@@ -1,12 +1,12 @@
 import React from 'react'
 import {useStore} from 'effector-react'
 
-import {Outline} from './ui/outline'
+import {Outline} from '~/ui/outline'
 
-import {createMediaQuery} from './lib/media-query'
+import {createMediaQuery} from '~/lib/media-query'
 
-import {codeSetCursor} from './features/editor'
-import {$stats} from './features/realm'
+import {codeSetCursor} from '~/features/editor'
+import {$stats} from '~/features/realm'
 
 export const Application: React.FC = () => (
   <>
