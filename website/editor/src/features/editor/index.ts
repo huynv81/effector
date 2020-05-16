@@ -5,5 +5,6 @@ export {
   changeSources,
   codeSetCursor,
   selectVersion,
+  performLint,
   Location,
 } from './model'
