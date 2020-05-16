@@ -1,1 +1,9 @@
-export {Location, changeSources, selectVersion, codeSetCursor} from './model'
+export {
+  $compiledCode,
+  $version,
+  $sourceCode,
+  changeSources,
+  codeSetCursor,
+  selectVersion,
+  Location,
+} from './model'

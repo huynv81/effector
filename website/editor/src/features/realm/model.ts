@@ -27,12 +27,16 @@ interface Stats {
   component: StoreView<any, any>[]
 }
 
-const invoke = createEvent<{method: string; params: any[]; instance: any}>()
+export const invoke = createEvent<{
+  method: string
+  params: any[]
+  instance: any
+}>()
 const status = createEvent<{active: boolean; throwError: boolean}>()
-const statusApi = {
-  init: status.prepend(() => ({active: true, throwError: false})),
-  done: status.prepend(() => ({active: false, throwError: false})),
-  fail: status.prepend(() => ({active: false, throwError: true})),
+export const statusApi = {
+  init: status.prepend((_: void) => ({active: true, throwError: false})),
+  done: status.prepend((_: void) => ({active: false, throwError: false})),
+  fail: status.prepend((_: void) => ({active: false, throwError: true})),
 }
 
 const {event, store, effect, domain} = split(
@@ -45,12 +49,12 @@ const {event, store, effect, domain} = split(
   },
 )
 
-const interval = createEvent<NodeJS.Timeout>()
-const intervalClear = createEvent<NodeJS.Timeout>()
-const timeout = createEvent<NodeJS.Timeout>()
-const timeoutClear = createEvent<NodeJS.Timeout>()
-const listener = createEvent<Listener>()
-const listenerRemove = createEvent<Listener>()
+export const interval = createEvent<NodeJS.Timeout>()
+export const intervalClear = createEvent<NodeJS.Timeout>()
+export const timeout = createEvent<NodeJS.Timeout>()
+export const timeoutClear = createEvent<NodeJS.Timeout>()
+export const listener = createEvent<Listener>()
+export const listenerRemove = createEvent<Listener>()
 const clearNode = createEvent<Unit<any>>()
 const component = createEvent<StoreView<any, any>>()
 
