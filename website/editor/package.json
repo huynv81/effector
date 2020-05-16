@@ -18,6 +18,7 @@
     "@types/babel__core": "^7.1.7",
     "@types/babel__standalone": "^7.1.2",
     "@types/invariant": "^2.2.33",
+    "@types/lodash.throttle": "^4.1.6",
     "@types/react": "^16.9.32",
     "flow-bin": "^0.122.0",
     "fs-extra": "^7.0.1",
