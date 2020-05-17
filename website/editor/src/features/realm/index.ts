@@ -1,11 +1,15 @@
 export {
   $stats,
+  domain,
+  effect,
+  event,
   interval,
   intervalClear,
   invoke,
   listener,
   listenerRemove,
   statusApi,
+  store,
   timeout,
   timeoutClear,
 } from './model'

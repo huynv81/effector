@@ -17,6 +17,7 @@
     "@babel/standalone": "^7.7.7",
     "@types/babel__core": "^7.1.7",
     "@types/babel__standalone": "^7.1.2",
+    "@types/codemirror": "^0.0.93",
     "@types/invariant": "^2.2.33",
     "@types/lodash.throttle": "^4.1.6",
     "@types/react": "^16.9.32",

@@ -39,7 +39,7 @@ export const statusApi = {
   fail: status.prepend((_: void) => ({active: false, throwError: true})),
 }
 
-const {event, store, effect, domain} = split(
+export const {event, store, effect, domain} = split(
   invoke.map(event => event.instance ?? {}),
   {
     store: object => object.kind === 'store' || object.kind === 1,
