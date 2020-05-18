@@ -19,6 +19,7 @@
     "@types/babel__standalone": "^7.1.2",
     "@types/codemirror": "^0.0.93",
     "@types/invariant": "^2.2.33",
+    "@types/linkifyjs": "^2.1.3",
     "@types/lodash.throttle": "^4.1.6",
     "@types/react": "^16.9.32",
     "flow-bin": "^0.122.0",

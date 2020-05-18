@@ -9,6 +9,7 @@ export {
   listener,
   listenerRemove,
   statusApi,
+  status,
   store,
   timeout,
   timeoutClear,

@@ -32,7 +32,7 @@ export const invoke = createEvent<{
   params: any[]
   instance: any
 }>()
-const status = createEvent<{active: boolean; throwError: boolean}>()
+export const status = createEvent<{active: boolean; throwError: boolean}>()
 export const statusApi = {
   init: status.prepend((_: void) => ({active: true, throwError: false})),
   done: status.prepend((_: void) => ({active: false, throwError: false})),
