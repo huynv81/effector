@@ -2,6 +2,7 @@ export {
   $compiledCode,
   $version,
   $sourceCode,
+  $packageVersions,
   changeSources,
   codeSetCursor,
   selectVersion,

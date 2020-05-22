@@ -30,7 +30,7 @@ const AnimIcon = styled.span`
   }
 `
 
-export const LoadingIcon = (props: object) => (
+export const LoadingIcon = (props: {style?: object}) => (
   <AnimIcon role="img" aria-label="loading" {...props}>
     <svg
       viewBox="0 0 1024 1024"
